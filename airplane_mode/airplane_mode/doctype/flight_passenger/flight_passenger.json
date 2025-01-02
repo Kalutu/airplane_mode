@@ -1,44 +1,43 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "prompt",
- "creation": "2025-01-02 23:23:36.974295",
+ "autoname": "autoincrement",
+ "creation": "2025-01-02 23:59:11.440653",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "founding_year",
-  "customer_care_number",
-  "headquarters"
+  "first_name",
+  "last_name",
+  "date_of_birth"
  ],
  "fields": [
   {
-   "fieldname": "founding_year",
-   "fieldtype": "Int",
-   "label": "Founding Year",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "customer_care_number",
+   "fieldname": "first_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Customer Care Number",
+   "label": "First Name",
    "reqd": 1
   },
   {
-   "fieldname": "headquarters",
+   "fieldname": "last_name",
    "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Headquarters",
+   "label": "Date Of Birth",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-02 23:27:42.191810",
+ "modified": "2025-01-03 00:04:37.721240",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
- "name": "Airline",
- "naming_rule": "Set by user",
+ "name": "Flight Passenger",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {
@@ -56,5 +55,6 @@
  ],
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "first_name"
 }

@@ -1,44 +1,47 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "prompt",
- "creation": "2025-01-02 23:23:36.974295",
+ "autoname": "format:{airline}-{###}",
+ "creation": "2025-01-02 23:37:18.491232",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "founding_year",
-  "customer_care_number",
-  "headquarters"
+  "model",
+  "airline",
+  "capacity"
  ],
  "fields": [
   {
-   "fieldname": "founding_year",
-   "fieldtype": "Int",
-   "label": "Founding Year",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "customer_care_number",
+   "fieldname": "model",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Customer Care Number",
+   "label": "Model",
    "reqd": 1
   },
   {
-   "fieldname": "headquarters",
-   "fieldtype": "Data",
+   "fieldname": "capacity",
+   "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Headquarters",
+   "label": "Capacity",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "airline",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Airline",
+   "options": "Airline",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-02 23:27:42.191810",
+ "modified": "2025-01-02 23:47:35.085701",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
- "name": "Airline",
- "naming_rule": "Set by user",
+ "name": "Airplane",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
