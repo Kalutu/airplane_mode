@@ -123,7 +123,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-01-03 13:05:35.415422",
+ "modified": "2025-01-03 14:50:12.639274",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Ticket",
@@ -147,6 +147,10 @@
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": [
+  {
+   "color": "Gray",
+   "title": "Booked"
+  },
   {
    "color": "Purple",
    "title": "Checked-In"
