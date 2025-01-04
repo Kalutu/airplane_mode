@@ -17,10 +17,12 @@
   "destination_airport",
   "destination_airport_code",
   "depature_details_section",
-  "date_of_depature",
+  "date_of_departure",
   "duration",
   "column_break_ysue",
   "time_of_departure",
+  "is_published",
+  "route",
   "amended_from"
  ],
  "fields": [
@@ -44,13 +46,6 @@
    "in_list_view": 1,
    "label": "Airplane",
    "options": "Airplane",
-   "reqd": 1
-  },
-  {
-   "fieldname": "date_of_depature",
-   "fieldtype": "Date",
-   "in_list_view": 1,
-   "label": "Date of Depature",
    "reqd": 1
   },
   {
@@ -124,9 +119,29 @@
   {
    "fieldname": "column_break_ysue",
    "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "is Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "date_of_departure",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Departure",
+   "reqd": 1
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
  "is_submittable": 1,
  "links": [
   {
@@ -134,7 +149,7 @@
    "link_fieldname": "flight"
   }
  ],
- "modified": "2025-01-04 18:14:05.227716",
+ "modified": "2025-01-04 23:56:53.805862",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Flight",
@@ -155,6 +170,7 @@
    "write": 1
   }
  ],
+ "route": "flights",
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": []
