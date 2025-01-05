@@ -11,7 +11,11 @@
 	</li>
 	<li>Duration: {{ frappe.utils.format_duration(doc.duration) }}</li>
 </ul>
-<a href="#" class="btn btn-lg btn-primary rounded-pill">Book Flight</a>
+<a
+	href="/ticket-booking-web-form/new?flight={{doc.name}}&flight_price=5000"
+	class="btn btn-lg btn-primary rounded-pill"
+	>Book Flight</a
+>
 
 {% endblock %}
 
