@@ -10,6 +10,7 @@
   "status",
   "column_break_kjzu",
   "flight",
+  "gate_number",
   "seat",
   "section_break_eddo",
   "source_airport_code",
@@ -153,12 +154,18 @@
   {
    "fieldname": "column_break_iyrk",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gate_number",
+   "fieldtype": "Data",
+   "label": "Gate Number",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-01-07 14:20:43.161633",
+ "modified": "2025-01-07 17:51:41.235096",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Ticket",
