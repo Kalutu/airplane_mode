@@ -23,7 +23,9 @@
   "time_of_departure",
   "is_published",
   "route",
-  "amended_from"
+  "amended_from",
+  "section_break_uwbc",
+  "crew_members"
  ],
  "fields": [
   {
@@ -137,6 +139,16 @@
    "in_list_view": 1,
    "label": "Date of Departure",
    "reqd": 1
+  },
+  {
+   "fieldname": "section_break_uwbc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "crew_members",
+   "fieldtype": "Table",
+   "label": "Crew Members",
+   "options": "Flight Crew Members"
   }
  ],
  "has_web_view": 1,
@@ -149,7 +161,7 @@
    "link_fieldname": "flight"
   }
  ],
- "modified": "2025-01-07 14:12:41.803199",
+ "modified": "2025-01-07 17:23:08.894448",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Flight",
