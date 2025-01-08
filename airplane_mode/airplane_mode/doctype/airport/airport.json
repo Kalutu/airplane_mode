@@ -8,7 +8,10 @@
  "field_order": [
   "code",
   "city",
-  "country"
+  "country",
+  "total_shops",
+  "shops_occupied",
+  "shops_available"
  ],
  "fields": [
   {
@@ -31,11 +34,29 @@
    "in_list_view": 1,
    "label": "Country",
    "reqd": 1
+  },
+  {
+   "fieldname": "total_shops",
+   "fieldtype": "Int",
+   "label": "Total Shops",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shops_occupied",
+   "fieldtype": "Int",
+   "label": "Shops Occupied",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shops_available",
+   "fieldtype": "Int",
+   "label": "Shops Available",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-07 14:07:25.437131",
+ "modified": "2025-01-08 11:43:36.318012",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airport",

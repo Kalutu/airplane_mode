@@ -5,6 +5,16 @@ app_description = "A flight ticketing system"
 app_email = "kalutudaniel@gmail.com"
 app_license = "mit"
 
+
+fixtures = [
+    {
+        "doctype": "Shop Type",
+        "filters": [
+            ["name", "in", ["Stall", "Walk-through", "Normal"]]
+        ]
+    }
+]
+
 # Apps
 # ------------------
 
@@ -151,23 +161,23 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"airplane_mode.tasks.all"
-# 	],
-# 	"daily": [
-# 		"airplane_mode.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"airplane_mode.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"airplane_mode.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"airplane_mode.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	# "all": [
+	# 	"airplane_mode.tasks.all"
+	# ],
+	"daily": [
+		"airplane_mode.tasks.update_expired_contracts"
+	],
+	# "hourly": [
+	# 	"airplane_mode.tasks.hourly"
+	# ],
+	# "weekly": [
+	# 	"airplane_mode.tasks.weekly"
+	# ],
+	"monthly": [
+		"airplane_mode.tasks.send_rent_reminders"
+	],
+}
 
 # Testing
 # -------
